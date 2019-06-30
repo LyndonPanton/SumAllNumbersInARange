@@ -60,6 +60,53 @@ header {
 
 
 /* MAIN */
+input {
+	display: block;
+	margin: 0 auto 3vh;
+}
+
+main {
+	padding-top: 10vh;
+}
+
+.display {
+	font-size: 1.2em;
+}
+
+.form-input {
+	border: none;
+	border-bottom: 1px white solid;
+	background-color: transparent;
+	text-align: center;
+	font-family: Copperplate, Copperplate Gothic Light, fantasy;
+	font-size: 1em;
+	color: white;
+}
+
+.form-input:focus {
+	border-bottom-color: #FDFA87;
+	font-weight: bold;
+}
+
+.form-input::placeholder {
+	opacity: 0.6;
+	color: white;
+}
+
+#form-submit {
+	margin-bottom: 5vh;
+	border: 2px white solid;
+	border-radius: 6px;
+	padding: 1vh 4vw;
+	background-color: #FB9832;
+	font-family: Copperplate, Copperplate Gothic Light, fantasy;
+	font-size: 1.2em;
+}
+
+#form-submit:active {
+	background-color: #FDFA87;
+	font-weight: bold;
+}
 
 
 
