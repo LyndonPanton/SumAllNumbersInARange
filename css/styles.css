@@ -43,6 +43,7 @@ header {
 
 #task {
 	position: absolute;
+	z-index: 1;
 	padding-top: 0.5vh;
 	padding-bottom: 0.5vh;
 	background-color: #59BED0;
