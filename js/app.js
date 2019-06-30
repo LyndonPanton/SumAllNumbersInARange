@@ -3,15 +3,20 @@
 window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
+	function display(range, sum) {
+		document.getElementById("range-value").textContent = range;
+		document.getElementById("sum-value").textContent = sum;
+	}
+
 	function sum(array) {
 		if (!array[0] || !array[1]) {
-			return "Input must not be empty";
+			return display("Input must not be empty", "???");
 		} else if (/\D/.test(array[0]) || /\D/.test(array[1])) {
-			return "Input must only contain numerical characters";
+			return display("Input must only contain numerical characters", "???");
 		} else if (isNaN(array[0]) || isNaN(array[1])) {
-			return ("Enter two numbers");
+			return display("Enter two numbers", "???");
 		} else if (array[0] % 1 !== 0 || array[1] % 1 !== 0) {
-			return ("Enter two integers");
+			return display("Enter two integers", "???");
 		} else {
 			array[0] = Number(array[0]);
 			array[1] = Number(array[1]);
@@ -26,11 +31,13 @@ window.onload = function(event) {
 				}
 			});
 
+			let range = array[0] + " - " + array[1];
+
 			for (let i = array[0]; i <= array[1]; i++) {
 				sum = sum + i;
 			}
 
-			return sum;
+			return display(range, sum);
 		}
 	}
 
