@@ -30,5 +30,10 @@ window.onload = function(event) {
 		if (event.keyCode === 13 || event.keyCode === 32) {
 			toggle(this);
 		}
-	})
+	});
+
+	let form = document.getElementById("form");
+	form.addEventListener("submit", function(event) {
+		event.preventDefault();
+	});
 };
