@@ -11,3 +11,10 @@
 > 2. Enter an integer into the second input field
 > 3. Click on the _Sum_ button
 > 4. The range of those values and the sum of those values plus the integers between them will be displayed
+
+## Requirements
+> 1. This project requires a browser to run
+> 2. The browser must have JavaScript available and enabled
+
+## Errors
+> 1. N/A
